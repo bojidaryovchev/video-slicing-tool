@@ -1,0 +1,1 @@
+export const VIDEO_STORE_KEY = 'VIDEO_STORE_KEY';
