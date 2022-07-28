@@ -1,7 +1,8 @@
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
-import { Actions } from '../shared/actions';
+import { GET_VIDEO_ACTION } from './modules/store/actions/get-video.action';
+import { OPEN_FILE_DIALOG_ACTION } from './modules/store/actions/open-file-dialog.action';
 
-export type Channels = keyof typeof Actions;
+export type Channels = typeof OPEN_FILE_DIALOG_ACTION | typeof GET_VIDEO_ACTION;
 
 contextBridge.exposeInMainWorld('electron', {
   ipcRenderer: {

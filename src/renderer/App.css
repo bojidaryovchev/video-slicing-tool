@@ -17,4 +17,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+}
+
+.open-video-btn {
+  padding: 6px 8px;
+  background: #4444ff;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+
+video {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
 }

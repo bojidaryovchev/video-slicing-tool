@@ -1,3 +1,5 @@
+/* eslint-disable no-new */
+/* eslint-disable new-cap */
 import ffmpeg from 'ffmpeg';
 import { Video } from './video.interface';
 
